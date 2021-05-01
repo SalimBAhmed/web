@@ -1,0 +1,47 @@
+[
+  {
+    "image_name": "tunis.png","ville_name": "Tunis", "ville_description" : "est la ville la plus peuplée et la capitale de la Tunisie. Elle est aussi le chef-lieu du gouvernorat du même nom depuis sa création en 1956. Située au nord du pays, au fond du golfe de Tunis dont elle est séparée par le lac de Tunis, la cité s'étend sur la plaine côtière et les collines avoisinantes. Son cœur historique est la médina, inscrite au patrimoine mondial de l'Unesco.\nBourgade modeste placée dans l'ombre de Carthage, Kairouan puis Mahdia, elle est finalement désignée comme capitale le 20 septembre 1159 (5 ramadan 554 du calendrier musulman), sous l'impulsion des Almohades, puis confirmée dans son statut sous la dynastie des Hafsides en 1228 et à l'indépendance du pays le 20 mars 1956.\nTunis est la capitale économique et commerciale de la Tunisie. La densité de son réseau routier, autoroutier et sa structure aéroportuaire en font un point de convergence pour les transports nationaux. Cette situation est issue d'une longue évolution, en particulier des conceptions centralisatrices qui donnent un rôle considérable à la capitale et tendent à y concentrer à l'extrême les institutions.",
+    "places" : [],
+    "place_sub_desc" : [],
+    "image_sub" : []
+  },
+  {
+    "image_name": "sousse.jpg", "ville_name" : "Sousse", "ville_description" : "SOUSSE (arabe : سوسة ) est une ville portuaire de l'Est de la Tunisie, située à 143 kilomètres au sud de Tunis, et ouverte sur le golfe d'Hammamet (mer Méditerranée). Capitale du Sahel tunisien Elle  est parfois surnommée la « perle du Sahel »  et chef-lieu du gouvernorat du même nom, elle est la troisième municipalité du pays après Tunis et Sfax, et la quatrième agglomération, Nabeul étant la troisième. médina de Sousse est inscrite au patrimoine mondial de l'Unesco depuis 1988",
+    "places" : ["MÉDINA DE SOUSSE","PORT KANTAOUI","GOLF"],
+    "place_sub_desc" : [
+      [
+        "La médina de Sousse, son fort \" le Ribat\", sa Grande Mosquée, sa Kasbah, ses remparts forment un ensemble exceptionnel de monuments à la beauté austère, puissamment évocateur du passé de cette place forte médiévale.",
+        "Héritière d’une grande ville antique du nom d’Hadrumète, la Sousse musulmane fut d’abord un petit avant-poste de Kairouan, la première capitale du Maghreb. Au VIIIe siècle, en effet, y fut implanté un ribat, une communauté d’ascètes vouée à la surveillance du littoral en même temps qu’à la propagation de la doctrine religieuse.",
+        "Ce Ribat a été conservé intact. Erigé face à la mer, il est très semblable aux petits châteaux orientaux qui s’édifiaient au même moment en Syrie : une enceinte flanquée de tours rondes, une cour carrée bordée de cellules pour les vivres et les voyageurs de passage ; et à l’étage, les cellules des ascètes et une salle de prière. Cette dernière, d’une grande sobriété, est la plus ancienne d’Afrique restée dans son état originel.\n\t\t\t\t\t\t\t\t\t   Quant à la tour-vigie, haute tour cylindrique comme les minarets abbassides, elle permettait de communiquer par signaux lumineux avec la longue chaîne de ribats qui se constituait alors tout au long de la côte africaine. Grâce à eux, selon la tradition, un message pouvait être transmis en une seule nuit d’Alexandrie à Ceuta."
+      ],
+      [
+        "Port El-Kantaoui  est une marina située au nord-ouest de la ville de Sousse,\n\t\t\t\t\t\t\t\t\t\tqui est devenue l'une des plus importantes stations balnéaires de la Tunisie."
+      ],
+      [
+        " Profitez des dix golfs tunisiens qui vous feront découvrir des paysages contrastés : montagnes boisées, dunes de sable, orangeraies ou paysage saharien.\n\t\t\t\t\t\t\t\t\t\t Une destination proche et ensoleillée pour un séjour golfique réussi."
+      ]
+    ],
+    "image_sub" : [
+      ["medina.jpg" ,"medina2.jpg" ,"medina3.jpg"],
+      ["port.png"],
+      ["golf.jpg"]
+    ]
+  },
+  {
+    "image_name": "djerba.jpg", "ville_name": "DJERBA", "ville_description": "Djerba, parfois orthographiée Jerba est une île de la mer Méditerranée d'une superficie de 514 km2 et située à l'est de la côte orientale tunisienne.grande île des côtes d'Afrique du Nord, localisée au sud-est du golfe de Gabès qu'elle borde par ses côtes orientale et septentrionalenote 1, Djerba ferme au sud le golfe de Boughrara, a principale ville, Houmt Souk, rassemble à elle seule 42 992 des 163 726 Djerbiens1.Anciennement appelée Gerbi ou Zerbi, l'île aurait été traversée par Ulysse. Les Carthaginois y fondent plusieurs comptoirs, les Romains y construisent plusieurs villes et y développent l'agriculture et le commerce portuaire. Passée successivement sous domination vandale, byzantine, arabe, ottomane, puis française, Djerba est devenue depuis les années 1960 une destination touristique populaire. Elle demeure marquée à la fois par la persistance de l'un des derniers parlers berbères tunisiens, le tamazight de Djerba, l'adhésion à l'ibadisme d'une partie de sa population musulmane et la présence d'une importante communauté juive dont la tradition fait remonter la venue à la destruction du Temple de Salomon par l'empereur Nabuchodonosor II en 586 av. J.-C.",
+    "places" : ["HOUMT SOUK", "GOLF"],
+    "place_sub_desc": [
+      [
+        "Houmt Souk est le chef-lieu administratif de l'île tunisienne de Djerba. Elle se situe à une vingtaine de kilomètres d'Ajim .",
+        "C'est la principale ville de la municipalité de Djerba-Houmt Souk qui est à la fois le chef-lieu d'une délégation et le siège d'une municipalité comptant quatre arrondissements pour 75 904 habitants (2014)2 et couvrant 176,54 km2 sans compter l'arrondissement de Mezraya. La ville de Houmt Souk abrite à elle seule une population de 44 555 habitants en 20043.."
+      ],
+      [
+        "Situé à 2 km de la plage de Seabel Rym, le Djerba Golf Resort & Spa propose des hébergements, un restaurant, une piscine extérieure, un bar et un salon commun. Ce village vacances met gratuitement à votre disposition une connexion Wi-Fi et un parking privé."
+      ]
+    ],
+    "image_sub" : [
+      ["djerba1.jpg","djerba2.jpg"],
+      ["djerba3.jpg"]
+    ]
+  }
+]

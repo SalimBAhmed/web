@@ -1,49 +1,47 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Beautiful Tunisia</title>
-            <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-                <h1>Bienvenue.. !</h1>
- 
-        </header>
-        <nav>
-            <div class="table">
-                <ul>
-                    <li class="ind">
-                        <a href="index.html">Accueil</a>
-                    </li>
-                    <li class="dest1">
-                        <a href="destination1.html">Tunis</a>
-                    </li>
-                    <li class="dest2">
-                        <a href="destination2.html"> SOUSSE </a>
-                    </li>
-                    <li class="dest2">
-                        <a href="destination3.html"> DJERBA </a>
-                    </li>
-                    <li class="cont">
-                        <a href="contact.html">Contactez-nous ! </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <section class="presentation">
-				<img src="assets/logo.png" alt="Logo" width="271" height="243">
-				<article>
-                    <h2>Présentation du site</h2>
-                   
-                    <p>Encourager le tourisme intérieur. </br>
-                    Permettre à l'utilisateur de découvrir les lieux de loisirs dans chaque gouvernorat du pays ainsi que les avis des visiteurs.     </p> 
-				</article>
-		</section>
-        <footer>
-            Copyright 2021 &copy; INDP2
+<html>
 
-        </footer>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Beautiful Tunisia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>
+        <span>Bienvenue.. !</span>
+        <span>à Tunisie </span>
+    </h1>
+    <nav>
+        <div class="table">
+            <ul>
+                <li class="ind">
+                    <a href="index.html">Accueil</a>
+                </li>
+                <li class="ind">
+                    <a href="#" onclick="$dc.loaddesctination(0);">Tunis</a>
+                </li>
+                <li class="ind">
+                    <a href="#" onclick="$dc.loaddesctination(1);"> SOUSSE </a>
+                </li>
+                <li class="ind">
+                    <a href="#" onclick="$dc.loaddesctination(2);"> DJERBA </a>
+                </li>
+                <li class="ind">
+                    <a href="contact.html" onclick="$dc.loaddesctinationContact();">Contactez-nous ! </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="presentation" id="main_content"></section>
+    <footer class="footer" >
+            <p class="footer-text">Copyright 2021 © INDP2</p>
+    </footer>
+
+    <script src="js/ajax_utils.js"></script>
+    <script src="js/main.js"></script>
+    <script id="impo"></script>
+</body>
+
 </html>
