@@ -1,11 +1,11 @@
 (function (global) {
     var dc = {};
-    var homeHtmlUrl = "./snippets/home_snippet.html";
-    var alldata = "Json/data.json";
-    var destination = "./snippets/destination_snippet.html";
-    var place = "snippets/places_snippet.html";
-    var placedesc = "snippets/places_desc.html";
-    var contact = "snippets/contact_snippet.html";
+    var homeHtmlUrl = "./pages/home_snippet.html";
+    var alldata = "server/data.json";
+    var destination = "./pages/destination_snippet.html";
+    var place = "pages/places_snippet.html";
+    var placedesc = "pages/places_desc.html";
+    var contact = "pages/contact_snippet.html";
     var numero = 0;
 
 

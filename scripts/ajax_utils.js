@@ -27,7 +27,7 @@
                         isJsonResponse);
                 };
             request.open("GET", requestUrl, true);
-            request.send(null);
+            request.send(null); 
         };
 
 
@@ -37,6 +37,7 @@
         if ((request.readyState == 4) &&
             (request.status == 200)) {
 
+            
             if (isJsonResponse == undefined) {
                 isJsonResponse = true;
             }

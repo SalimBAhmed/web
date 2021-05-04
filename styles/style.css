@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('assets/img/482395.jpg');
+    background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('../images/482395.jpg');
 }
 h1 {
     text-align:center!important;
