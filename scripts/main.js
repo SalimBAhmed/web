@@ -45,14 +45,12 @@
             false);
     }
 
-    dc.loaddesctinationContact = function (){
+    dc.loaddesctinationContact = function (data){
         $ajaxUtils.sendGetRequest(
             contact,
             function (contact) {
-                insertProperty("#main_contact", contact);
-            },
-            false
-        );
+                insertHtml("#main_content", contact);},
+            false);
     }
 
     function buildAndShowDestinationHTML (data){
