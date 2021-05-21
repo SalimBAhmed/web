@@ -1,0 +1,13 @@
+CREATE TABLE city (
+  id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+  city_name varchar(80) NOT NULL,
+  img varchar(80) NOT NULL,
+  city_desc varchar(1500) NOT NULL,
+  places varchar(255),
+  places_desc varchar(2000),
+  places_img varchar(255) 
+);
+
+INSERT INTO city(city_name,img,city_desc) values ("Tunis","tunis.png","hello");
+
+

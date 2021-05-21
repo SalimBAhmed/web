@@ -1,0 +1,6 @@
+
+change these DBConnection class : 
+
+dbhost = "jdbc:mysql://localhost:3306/web";
+username = "root";
+password = "";

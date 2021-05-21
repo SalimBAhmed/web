@@ -1,7 +1,7 @@
 (function (global) {
     var dc = {};
     var homeHtmlUrl = "./pages/home_snippet.html";
-    var alldata = "server/data.json";
+    var cityDataLink = "http://127.0.0.1:8080/web-1/app/show/city";
     var destination = "./pages/destination_snippet.html";
     var place = "pages/places_snippet.html";
     var placedesc = "pages/places_desc.html";
@@ -24,15 +24,15 @@
 
     document.addEventListener("DOMContentLoaded", function (event) {
         $ajaxUtils.sendGetRequest(
-            alldata,
+            cityDataLink,
             buildAndShowHomeHTML,
             true);
     });
 
-    dc.loaddesctination = function (num) {
+    dc.loadDestination = function (num) {
         numero = num;
         $ajaxUtils.sendGetRequest(
-            alldata,
+            cityDataLink,
             buildAndShowDestinationHTML,
             true);
     }
@@ -45,7 +45,7 @@
             false);
     }
 
-    dc.loaddesctinationContact = function (data){
+    dc.loadDestinationContact = function (data){
         $ajaxUtils.sendGetRequest(
             contact,
             function (contact) {
@@ -84,9 +84,9 @@
 
     function buildPlaceView(data,destination,place,placedesc) {
         var finalhtml = destination;
-        finalhtml = insertProperty(finalhtml,"image_name",data[numero].image_name);
-        finalhtml = insertProperty(finalhtml,"ville_name", data[numero].ville_name);
-        finalhtml = insertProperty(finalhtml,"ville_description", data[numero].ville_description);
+        finalhtml = insertProperty(finalhtml,"image_name",data[numero].img);
+        finalhtml = insertProperty(finalhtml,"ville_name", data[numero].cityName);
+        finalhtml = insertProperty(finalhtml,"ville_description", data[numero].citydesc);
         var liste = "";
         for (var i=0 ; i< data[numero].places.length; i++){
             liste += "<li>"+ data[numero].places[i] + "</li>";
@@ -100,8 +100,8 @@
             var subhtml ="";
             for (var j=0; j<data[numero].place_sub_desc[i].length; j++){
                 var sub_subhtml = placedesc;
-                sub_subhtml = insertProperty(sub_subhtml,"place_sub_desc",data[numero].place_sub_desc[i][j]);
-                sub_subhtml = insertProperty(sub_subhtml,"image_sub",data[numero].image_sub[i][j]);
+                sub_subhtml = insertProperty(sub_subhtml,"place_sub_desc",data[numero].placesDesc[i][j]);
+                sub_subhtml = insertProperty(sub_subhtml,"image_sub",data[numero].placesImg[i][j]);
                 subhtml += sub_subhtml;
             }
             html = insertProperty(html,"desc",subhtml);
