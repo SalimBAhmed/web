@@ -5,28 +5,7 @@
     "place_sub_desc" : [],
     "image_sub" : []
   },
-  {
-    "image_name": "sousse.jpg", "ville_name" : "Sousse", "ville_description" : "SOUSSE (arabe : سوسة ) est une ville portuaire de l'Est de la Tunisie, située à 143 kilomètres au sud de Tunis, et ouverte sur le golfe d'Hammamet (mer Méditerranée). Capitale du Sahel tunisien Elle  est parfois surnommée la « perle du Sahel »  et chef-lieu du gouvernorat du même nom, elle est la troisième municipalité du pays après Tunis et Sfax, et la quatrième agglomération, Nabeul étant la troisième. médina de Sousse est inscrite au patrimoine mondial de l'Unesco depuis 1988",
-    "places" : ["MÉDINA DE SOUSSE","PORT KANTAOUI","GOLF"],
-    "place_sub_desc" : [
-      [
-        "La médina de Sousse, son fort \" le Ribat\", sa Grande Mosquée, sa Kasbah, ses remparts forment un ensemble exceptionnel de monuments à la beauté austère, puissamment évocateur du passé de cette place forte médiévale.",
-        "Héritière d’une grande ville antique du nom d’Hadrumète, la Sousse musulmane fut d’abord un petit avant-poste de Kairouan, la première capitale du Maghreb. Au VIIIe siècle, en effet, y fut implanté un ribat, une communauté d’ascètes vouée à la surveillance du littoral en même temps qu’à la propagation de la doctrine religieuse.",
-        "Ce Ribat a été conservé intact. Erigé face à la mer, il est très semblable aux petits châteaux orientaux qui s’édifiaient au même moment en Syrie : une enceinte flanquée de tours rondes, une cour carrée bordée de cellules pour les vivres et les voyageurs de passage ; et à l’étage, les cellules des ascètes et une salle de prière. Cette dernière, d’une grande sobriété, est la plus ancienne d’Afrique restée dans son état originel.\n\t\t\t\t\t\t\t\t\t   Quant à la tour-vigie, haute tour cylindrique comme les minarets abbassides, elle permettait de communiquer par signaux lumineux avec la longue chaîne de ribats qui se constituait alors tout au long de la côte africaine. Grâce à eux, selon la tradition, un message pouvait être transmis en une seule nuit d’Alexandrie à Ceuta."
-      ],
-      [
-        "Port El-Kantaoui  est une marina située au nord-ouest de la ville de Sousse,\n\t\t\t\t\t\t\t\t\t\tqui est devenue l'une des plus importantes stations balnéaires de la Tunisie."
-      ],
-      [
-        " Profitez des dix golfs tunisiens qui vous feront découvrir des paysages contrastés : montagnes boisées, dunes de sable, orangeraies ou paysage saharien.\n\t\t\t\t\t\t\t\t\t\t Une destination proche et ensoleillée pour un séjour golfique réussi."
-      ]
-    ],
-    "image_sub" : [
-      ["medina.jpg" ,"medina2.jpg" ,"medina3.jpg"],
-      ["port.png"],
-      ["golf.jpg"]
-    ]
-  },
+  {\"img\": \"sousse.jpg\", \"cityName\" : \"Sousse\", \"cityDesc\" : \"SOUSSE (arabe : سوسة ) est une ville portuaire de l'Est de la Tunisie, située à 143 kilomètres au sud de Tunis, et ouverte sur le golfe d'Hammamet (mer Méditerranée). Capitale du Sahel tunisien Elle  est parfois surnommée la « perle du Sahel »  et chef-lieu du gouvernorat du même nom, elle est la troisième municipalité du pays après Tunis et Sfax, et la quatrième agglomération, Nabeul étant la troisième. médina de Sousse est inscrite au patrimoine mondial de l'Unesco depuis 1988\", \"places\" : [\"MÉDINA DE SOUSSE\",\"PORT KANTAOUI\",\"GOLF\"], \"placesDesc\" : [\"La médina de Sousse, son fort le Ribat, sa Grande Mosquée, sa Kasbah, ses remparts forment un ensemble exceptionnel de monuments à la beauté austère, puissamment évocateur du passé de cette place forte médiévale.\",\"Port El-Kantaoui  est une marina située au nord-ouest de la ville de Sousse,\n\t\t\t\t\t\t\t\t\t\tqui est devenue l'une des plus importantes stations balnéaires de la Tunisie.\",\" Profitez des dix golfs tunisiens qui vous feront découvrir des paysages contrastés : montagnes boisées, dunes de sable, orangeraies ou paysage saharien.\n\t\t\t\t\t\t\t\t\t\t Une destination proche et ensoleillée pour un séjour golfique réussi.\"],\"placesImg\" : [\"medina.jpg\",\"port.png\", \"golf.jpg\"]},
   {
     "image_name": "djerba.jpg", "ville_name": "DJERBA", "ville_description": "Djerba, parfois orthographiée Jerba est une île de la mer Méditerranée d'une superficie de 514 km2 et située à l'est de la côte orientale tunisienne.grande île des côtes d'Afrique du Nord, localisée au sud-est du golfe de Gabès qu'elle borde par ses côtes orientale et septentrionalenote 1, Djerba ferme au sud le golfe de Boughrara, a principale ville, Houmt Souk, rassemble à elle seule 42 992 des 163 726 Djerbiens1.Anciennement appelée Gerbi ou Zerbi, l'île aurait été traversée par Ulysse. Les Carthaginois y fondent plusieurs comptoirs, les Romains y construisent plusieurs villes et y développent l'agriculture et le commerce portuaire. Passée successivement sous domination vandale, byzantine, arabe, ottomane, puis française, Djerba est devenue depuis les années 1960 une destination touristique populaire. Elle demeure marquée à la fois par la persistance de l'un des derniers parlers berbères tunisiens, le tamazight de Djerba, l'adhésion à l'ibadisme d'une partie de sa population musulmane et la présence d'une importante communauté juive dont la tradition fait remonter la venue à la destruction du Temple de Salomon par l'empereur Nabuchodonosor II en 586 av. J.-C.",
     "places" : ["HOUMT SOUK", "GOLF"],

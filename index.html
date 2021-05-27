@@ -15,21 +15,27 @@
     </h1>
     <nav>
         <div class="table">
-            <ul>
+            <ul id="nav">
                 <li class="ind">
-                    <a href="index.html">Accueil</a>
+                    <a href="index.html" class=" current-page" >Accueil</a>
                 </li>
                 <li class="ind">
-                    <a href="#" onclick="$dc.loadDestination(1);">Tunis</a>
+                    <div class="dropdown" onmouseenter="$dc.showDestinations(this)">
+                        <button class="dropbtn">Destinations
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+<!--                          <a href="#">Tunis</a>
+                          <a href="#">Sousse</a>
+                          <a href="#">Djerba</a>-->
+                      </div>
+                    </div>
                 </li>
                 <li class="ind">
-                    <a href="#" onclick="$dc.loadDestination(2);"> SOUSSE </a>
+                    <a href="#" onclick="makeCurrentPage(this);">Ajouter Destination</a>
                 </li>
                 <li class="ind">
-                    <a href="#" onclick="$dc.loadDestination(3);"> DJERBA </a>
-                </li>
-                <li class="ind">
-                    <a href="#" onclick="$dc.loadDestinationContact();">Contactez-nous ! </a>
+                    <a href="#" onclick="$dc.loadDestinationContact();makeCurrentPage(this);" >Contactez-nous !</a>
                 </li>
             </ul>
         </div>
@@ -40,7 +46,8 @@
     </footer>
 
     <script src="scripts/ajax_utils.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/main.js"></script>    
+    <script src="scripts/style.js"></script>
     <script id="impo"></script>
 </body>
 

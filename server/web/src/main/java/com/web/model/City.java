@@ -2,59 +2,70 @@ package com.web.model;
 
 import java.util.List;
 import java.util.ArrayList;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlElementWrapper;
+import javax.xml.bind.annotation.XmlElements;
 
+@XmlRootElement
 public class City {
 
 	
-	private int city_id;
-	private String city_name;
+	private int cityId;
+	private String cityName;
 	private String img;
-	private String city_desc;
+	private String cityDesc;
+	@XmlElementWrapper
+	@XmlElements(@XmlElement(name="place", type=String.class))
 	private List<String> places;
-	private List<String> places_desc;
-	private List<String> places_img;
+	@XmlElementWrapper
+	@XmlElements(@XmlElement(name="decription", type=String.class))
+	private List<String> placesDesc;
+	@XmlElementWrapper
+	@XmlElements(@XmlElement(name="link", type=String.class))
+	private List<String> placesImg;
 	
 	public City() {
-		this.city_id = 0;
-		this.city_name = "";
+		this.cityId = 0;
+		this.cityName = "";
 		this.img = "";
-		this.city_desc = "";
+		this.cityDesc = "";
 		this.places = new ArrayList<String>();
-		this.places_desc = new ArrayList<String>();
-		this.places_img = new ArrayList<String>();
+		this.placesDesc = new ArrayList<String>();
+		this.placesImg = new ArrayList<String>();
 	}
-	public City(int city_id, String city_name, String img, String city_desc) {
-		this.city_id = city_id;
-		this.city_name = city_name;
+	public City(int cityId, String cityName, String img, String cityDesc) {
+		this.cityId = cityId;
+		this.cityName = cityName;
 		this.img = img;
-		this.city_desc = city_desc;
+		this.cityDesc = cityDesc;
 		this.places = new ArrayList<String>();
-		this.places_desc = new ArrayList<String>();
-		this.places_img = new ArrayList<String>();
+		this.placesDesc = new ArrayList<String>();
+		this.placesImg = new ArrayList<String>();
 	}
-	public City(int city_id, String city_name, String img, String city_desc, List<String> places, List<String> places_desc, List<String> places_img) {
-		this.city_id = city_id;
-		this.city_name = city_name;
+	public City(int cityId, String cityName, String img, String cityDesc, List<String> places, List<String> placesDesc, List<String> placesImg) {
+		this.cityId = cityId;
+		this.cityName = cityName;
 		this.img = img;
-		this.city_desc = city_desc;
+		this.cityDesc = cityDesc;
 		this.places = places;
-		this.places_desc = places_desc;
-		this.places_img = places_img;
+		this.placesDesc = placesDesc;
+		this.placesImg = placesImg;
 	}
 	
 	// Getters and Setters 
 	public int getCityId() {
-		return this.city_id;
+		return this.cityId;
 	}
-	public void setCityId(int city_id) {
-		this.city_id = city_id;
+	public void setCityId(int cityId) {
+		this.cityId = cityId;
 	}
 
 	public String getCityName() {
-		return this.city_name;
+		return this.cityName;
 	}
-	public void setCityName(String city_name) {
-		this.city_name = city_name;
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
 	}
 	
 	public String getImg() {
@@ -65,10 +76,10 @@ public class City {
 	}
 	
 	public String getCityDesc() {
-		return this.city_desc;
+		return this.cityDesc;
 	}
-	public void setCityDesc(String city_desc) {
-		this.city_desc = city_desc;
+	public void setCityDesc(String cityDesc) {
+		this.cityDesc = cityDesc;
 	}
 	
 	public List<String> getPlaces() {
@@ -79,16 +90,16 @@ public class City {
 	}
 	
 	public List<String> getPlacesDesc() {
-		return this.places_desc;
+		return this.placesDesc;
 	}
-	public void getPlacesDesc(List<String> places_desc) {
-		this.places_desc = places_desc;
+	public void getPlacesDesc(List<String> placesDesc) {
+		this.placesDesc = placesDesc;
 	}
 	
 	public List<String> getPlacesImg() {
-		return this.places_img;
+		return this.placesImg;
 	}
-	public void getPlacesImg(List<String> places_img) {
-		this.places_img = places_img;
+	public void getPlacesImg(List<String> placesImg) {
+		this.placesImg = placesImg;
 	}
 }

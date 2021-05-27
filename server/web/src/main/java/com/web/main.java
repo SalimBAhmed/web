@@ -43,16 +43,19 @@ public class main {
 	}
 	*/
 	@GET
-    @Path("helloworld")
-    public String helloworld() {
+    @Path("city")
+    @Produces("application/json")
+    public List<City> getAllCities() {
 		String sql_select = "Select * From city";
 		
+		List<City> cityList = new ArrayList<City>();
+
 		try(Connection conn = DBConnection.createNewDBConnection()){
 			
 			stmt = conn.createStatement();
 			results = stmt.executeQuery(sql_select);
 			
-			List<City> cityList = new ArrayList<City>();			
+						
 			
 			 while (results.next()) {
 				int id = Integer.valueOf(results.getString("id"));
@@ -66,14 +69,14 @@ public class main {
 			
 			ObjectMapper mapper = new ObjectMapper();
 		    String JSONOutput = mapper.writeValueAsString(cityList);
-		    
-		    return JSONOutput;
 
 		} catch (SQLException e) {
-			return e.toString();
+			e.printStackTrace();
 		} catch (JsonProcessingException e) {
-			return e.toString();
+			e.printStackTrace();
 		}
+
+		return cityList;
     }
 	
 
@@ -99,7 +102,6 @@ public class main {
 				city.setImg(img);
 				city.setCityDesc(desc);
 				
-				
 				ObjectMapper mapper = new ObjectMapper();
 			    String JSONOutput = mapper.writeValueAsString(city);
 			}
@@ -112,5 +114,20 @@ public class main {
 	    return city;
 	}
 	
+	@POST
+	@Path("/addCity")
+	public City addCity(){
+		//String input = "{\"img\":\"tunis.png\",\"places\":[],\"cityName\":\"Tunis\",\"cityDesc\":\"hello\",\"placesDesc\":[],\"placesImg\":[],\"cityId\":0}";
+		String input = "{\"img\": \"sousse.jpg\", \"cityName\" : \"Sousse\", \"cityDesc\" : \"SOUSSE \", \"places\":[\"MÉDINA DE SOUSSE\",\"PORT KANTAOUI\",\"GOLF\"],\"placesDesc\":[],\"placesImg\":[]}";
+		City city = new City();
+		try{
+			ObjectMapper objectMapper = new ObjectMapper();
+			city = objectMapper.readValue(input, City.class);
+		} catch ( Exception e){
+			e.printStackTrace();
+		}
+
+		return city;
+	}
 
 }
