@@ -6,7 +6,9 @@
     var place = "pages/places_snippet.html";
     var placedesc = "pages/places_desc.html";
     var contact = "pages/contact_snippet.html";
+    var adddestination = "pages/destinations.html"
     var numero = 0;
+    var locationNumber= 1;
 
     function showAllDestinations(){
         return 0;
@@ -137,6 +139,33 @@
 
         finalhtml += "</section>"
         return finalhtml;
+    }
+
+    dc.AddDestination = function  (){
+        $ajaxUtils.sendGetRequest(
+            adddestination,
+            function (adddestination){
+                
+                insertHtml("#main_content", adddestination);
+            },
+            false
+        );
+    }
+
+    dc.addLocation = function ()
+    {
+        number = locationNumber;
+        locationNumber +=1;
+        var html = "<label for=\"LocationName"+number+"\">Nom:</label><br>";
+        html += "<input type=\"text\" id=\"Location"+number+"\" name=\"LocationName"+number+"\"><br>";
+        html += "<label for=\"LocationDescription"+number+"\">Description:</label><br>";
+        html += "<input type=\"text\" id=\"LocationDescription"+number+"\" name=\"LocationDescription"+number+"\"><br>";
+        html += "<label for=\"LocationImage"+number+"\">Image:</label><br>";
+        html += "<input type=\"file\" id=\"LocationImage"+number+"\" name=\"LocationImage"+number+"\"><br>";
+        html+= "<a onclick=\"$dc.addLocation()\" style=\"color: white;\">Ajout d'un emplacement</a><br>"
+        html += "<div id=\"location" + locationNumber + "\"></div>";
+        insertHtml("#location"+number, html);
+
     }
 
     global.$dc = dc;
